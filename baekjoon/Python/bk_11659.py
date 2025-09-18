@@ -18,8 +18,4 @@ for _ in range(M):
     i, j = map(int, input().split())
     result.append(str(prefix[j] - prefix[i-1]))
 
-<<<<<<< HEAD
 print("\n".join(result))
-=======
-print("\n".join(result))
->>>>>>> ed4a5351286870e2f69a28312bad850161d97c00
