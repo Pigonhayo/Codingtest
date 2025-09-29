@@ -11,4 +11,7 @@ D[0] = 2
 D[1] = 3
 D[2] = 5
 
-D[i] = D[i-1] + D[i-2]
+for i in range(3, N+1):
+    D[i] = D[i-1] + D[i-2]
+
+print(D[N] % 10007)
