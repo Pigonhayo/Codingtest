@@ -1,5 +1,3 @@
-package baekjoon.Java;
-
 import java.util.*;
 
 public class bk_1149 {
