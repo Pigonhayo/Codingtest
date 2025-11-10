@@ -1,8 +1,14 @@
 from collections import deque
+import sys
+
+# N과 M 입력은 그대로 (예: 4 5)
+N, M = map(int, sys.stdin.readline().split())
 
 board = []
-
-n, m = map(int, input().split()), 
+for _ in range(N):
+    row = list(map(int, sys.stdin.readline().split()))
+    board.append(row)
+	
 vis = [[False] * 502 for _ in range(502)]
 dx = [0, 1, 0, -1]
 dy = [1, 0, -1,0]
@@ -24,8 +30,6 @@ while Q:
 	vis[nx][ny] = vis[cur[0]][cur[1]] + 1
 
 	Q.append((nx, ny))
-	
-for i in range(n):
-    for j in range(m):
-        print(vis[i][j] -1 , end = " ")
-    print()
+
+
+print(vis[i][j] -1 , end = " ")
